@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .hero {
+	background-image: url("/image_slide2.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: cover;
+
+	animation: animateBG 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes animateBG {
+	0% {
+		background-image: url("/image_slide2.png");
+	}
+	50% {
+		background-image: url("/image_slide4.png");
+	}
+	100% {
+		background-image: url("/image_slide1.png");
+	}
+} */
