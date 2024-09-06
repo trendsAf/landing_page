@@ -18,8 +18,8 @@ const NavModal: React.FC<NavModalProps> = ({ toggleModal }) => {
 					className="w-full h-full absolute -z-10 top-0 left-0"
 					onClick={toggleModal}
 				></div>
-				<div className="w-4/5 sm:w-1/2 h-full flex flex-col items-center bg-white rounded-lg p-4 pt-40">
-					<div className="text-xl w-[80%] flex flex-col gap-4">
+				<div className="w-4/5 sm:w-1/2 h-full flex font-heading flex-col items-center bg-white rounded-lg p-4 pt-40">
+					<div className="text-lg w-[80%] flex flex-col gap-4">
 						{navItems.map((item, index) => (
 							<Link
 								key={index}
@@ -35,7 +35,7 @@ const NavModal: React.FC<NavModalProps> = ({ toggleModal }) => {
 						<PrimaryButton
 							text="Join waitlist"
 							type="button"
-							className="py-2 px-4 bg-primary text-white rounded cursor-pointer mt-4 ml-10"
+							className="py-2 px-4 bg-primary font-heading text-white rounded cursor-pointer mt-4 ml-10"
 							onClick={handleClick}
 						/>
 					</div>

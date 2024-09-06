@@ -13,16 +13,9 @@ export default {
 				heading: ["Space Grotesk"],
 				body: ["Helvetica Neue"],
 			},
-			keyframes: {
-				animateBG: {
-					"0%": { backgroundImage: 'url("/image_slide2.png")' },
-					"50%": { backgroundImage: 'url("/image_slide4.png")' },
-					"100%": { backgroundImage: 'url("/image_slide1.png")' },
-				},
-			},
-			animation: {
-				animateBG: "animateBG 20s ease-in-out infinite alternate-reverse",
-			},
+			// backgroundImage: {
+			// 	bgImage: `[url("/image_slide4.png")]`
+			// }
 		},
 	},
 	plugins: [],

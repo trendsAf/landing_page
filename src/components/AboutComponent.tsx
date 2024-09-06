@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { about_image } from "../assets/images";
+// import { about_image } from "../assets/images";
 import { aboutData } from "../utils/aboutData";
 
 const AboutComponent = () => {
@@ -22,18 +22,19 @@ const AboutComponent = () => {
 				<div className="flex">
 					<Link
 						to={"https://basefood-waitlist.netlify.app"}
-						className="flex items-center gap-2 cursor-pointer text-primary border-b border-b-primary text-xl"
+						className="flex items-center gap-2 cursor-pointer font-heading text-primary border-b border-b-primary text-xl"
 					>
 						Join Waitlist
 					</Link>
 				</div>
 			</div>
 			<div className="lg:w-2/4 mt-10 lg:mt-0 lg:h-[80vh] rounded-lg overflow-hidden">
-				<img
-					src={about_image}
-					alt="about_trendsAf"
-					className="w-full h-full object-cover"
-				/>
+				<video autoPlay muted loop className="w-full h-full object-fill">
+					<source
+						src="https://res.cloudinary.com/dq6npfdgz/video/upload/v1725645136/small_3075999-hd_1280_720_30fps_ar9d0k.mp4"
+						type="video/mp4"
+					/>
+				</video>
 			</div>
 		</div>
 	);
