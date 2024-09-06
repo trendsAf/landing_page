@@ -3,7 +3,7 @@ import DataCard from "./common/DataCard";
 
 const DataCardsComponent = () => {
 	return (
-		<div className="mt-10 flex flex-col gap-4 px-[5%]">
+		<div className="overflow-x-hidden max-w-[100%]  flex flex-col gap">
 			{dataCards.map((data, idx) => (
 				<DataCard
 					title={data.title}

@@ -49,13 +49,13 @@ const Footer = () => {
 						<form action="" className="w-full flex gap-4">
 							<input
 								type="text"
-								className="w-full px-4 rounded"
+								className="w-full px-4 font-heading rounded"
 								placeholder="Enter your email"
 							/>
 							<PrimaryButton
 								text="Subscribe"
 								type="button"
-								className="py-2 px-4 bg-primary text-white rounded"
+								className="py-2 px-4 bg-primary font-heading text-white"
 								onClick={handleSubscribe}
 							/>
 						</form>
