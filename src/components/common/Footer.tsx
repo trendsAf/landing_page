@@ -1,7 +1,7 @@
 import { FaXTwitter } from "react-icons/fa6";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
-import { nav_logo } from "../../assets/images";
+import { nav_logo } from "../../utils/imageUtils";
 import PrimaryButton from "./PrimaryButton";
 
 const Footer = () => {

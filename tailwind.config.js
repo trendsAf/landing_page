@@ -14,7 +14,7 @@ export default {
 				body: ["Helvetica Neue"],
 			},
 			// backgroundImage: {
-			// 	bgImage: `[url("/image_slide4.png")]`
+			// 	bgImage: `[url("/image_slide4.jpeg")]`
 			// }
 		},
 	},
