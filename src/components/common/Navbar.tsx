@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { nav_logo } from "../../assets/images";
+import { nav_logo } from "../../utils/imageUtils";
 import PrimaryButton from "./PrimaryButton";
 import { navItems } from "../../utils/navItems";
 import { AiOutlineMenu } from "react-icons/ai";

@@ -17,12 +17,12 @@ const DataCard: React.FC<DataCardProps> = ({
 	image,
 	navigate,
 }) => {
-	const isReverse = title === "Aggregate" || title === "Act";
+	const floatLeft = title === "Aggregate" || title === "Act";
 
 	return (
 		<div
 			className={`flex justify-between  items-center gap-4 ${
-				isReverse
+				floatLeft
 					? "lg:flex-row-reverse flex-col bg-secondary"
 					: "lg:flex-row flex-col"
 			} w-full`}
@@ -66,16 +66,16 @@ const DataCard: React.FC<DataCardProps> = ({
 			</div>
 			<div
 				className={`w-full lg:w-[40%] h-[40vh] md:h-[60vh] lg:h-[70vh] bg-secondary flex flex-col justify-center py-10 md:mt-5 lg:mt-0 ${
-					isReverse ? "bg-white rounded-r-full" : "rounded-l-full "
+					floatLeft ? "bg-white rounded-r-full" : "rounded-l-full "
 				}`}
 			>
 				<motion.div
 					className={`relative w-[80%] lg:w-[110%] h-[80%] ${
-						isReverse
+						floatLeft
 							? "left-10 lg:left-24"
 							: "ml-[3rem] md:ml-[7rem] md:mr-[10rem] lg:ml-0  lg:right-[11rem]"
 					}`}
-					variants={cardVariant(isReverse)}
+					variants={cardVariant(floatLeft)}
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: false, amount: 0.2 }}
@@ -86,6 +86,7 @@ const DataCard: React.FC<DataCardProps> = ({
 						src={image}
 						alt="image"
 						className="w-full h-full object-cover absolute rounded-lg"
+						loading="lazy"
 					/>
 				</motion.div>
 			</div>

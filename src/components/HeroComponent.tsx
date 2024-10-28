@@ -1,14 +1,23 @@
+import { AdvancedImage } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
 import { motion } from "framer-motion";
-import PrimaryButton from "./common/PrimaryButton";
 import { fadeInVariant } from "../utils/variants";
+import PrimaryButton from "./common/PrimaryButton";
 
 const HeroComponent = () => {
+	const cld = new Cloudinary({
+		cloud: {
+			cloudName: "dq6npfdgz",
+		},
+	});
+	const myImage = cld.image("v1725875233/image_slide4_i9rgkm.jpg");
 	return (
 		<div className="max-w-[90%] mx-auto h-[60vh] lg:h-[75vh] rounded-2xl overflow-hidden">
 			<div
 				className="relative h-full flex flex-col justify-center gap-8 bg-cover bg-center bg-no-repeat"
-				style={{ backgroundImage: `url("/image_slide4.png")` }}
+				// style={{ backgroundImage: `url(${image})` }}
 			>
+				<AdvancedImage cldImg={myImage} />
 				<div className="bg-gradient-to-t from-black/60 w-full h-full absolute"></div>
 				<div className="absolute z-20">
 					<div className="lg:w-3/4 lg:pl-20 flex flex-col">

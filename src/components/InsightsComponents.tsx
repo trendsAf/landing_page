@@ -1,4 +1,4 @@
-import { comesa_countries_map } from "../assets/images";
+// import { comesa_countries_map } from "../assets/images";
 import PrimaryButton from "./common/PrimaryButton";
 
 const InsightsComponents = () => {
@@ -9,7 +9,7 @@ const InsightsComponents = () => {
 		<div className="h-screen md:h-[85vh] relative ">
 			<div className="relative w-full h-full">
 				<div className="absolute w-full h-full bg-black/40"></div>
-				<video autoPlay muted loop className="w-full h-full object-fill">
+				<video autoPlay muted loop className="w-full h-full object-cover">
 					<source
 						src="https://res.cloudinary.com/dq6npfdgz/video/upload/v1725639485/4778066-uhd_2562_1440_25fps_ytvf2g.mp4"
 						type="video/mp4"
@@ -35,13 +35,13 @@ const InsightsComponents = () => {
 						/>
 					</div>
 				</div>
-				<div className=" w-3/4 h-full md:mt-8">
+				{/* <div className=" w-3/4 h-full md:mt-8">
 					<img
 						src={comesa_countries_map}
 						alt="comesa_map"
 						className="w-full h-full object-cover"
 					/>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

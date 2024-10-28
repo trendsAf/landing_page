@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { about_image } from "../assets/images";
 import { aboutData } from "../utils/aboutData";
 
 const AboutComponent = () => {
